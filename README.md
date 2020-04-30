@@ -1,19 +1,17 @@
-# WPThemeDoc
+# WordPress Theme Documentation
 Easily create beautiful, simple to use, and easily extendable documentation for your WordPress themes.
 
 ## Build with NPM
 First of all install npm and run console in the project folder:
-
 <pre>npm install</pre>
 
-After that you will be able to build Theme Documentation
-
+After that you will be able to build Theme Documentation:
 <pre>npm start</pre>
 
-Build will be added here /build/index.html
+Build will be added here: /build/index.html
 
 ## Variables
-WPThemeDoc is straight HTML, but it utilizes a few "Find and Replace" variables so it's that much easier to plug in your relevant data. Simply conduct a search and replace the following:
+Uka-theme-docs is straight HTML, but it utilizes a few "Find and Replace" variables so it's that much easier to plug in your relevant data. Simply conduct a search and replace the following:
 
 - [ ] `@@name` - York Pro
 - [ ] `@@slug` - york-pro
@@ -30,5 +28,6 @@ Add a link in the `header nav` element, like this: `[<a href="#Developers">Devel
 ## Contribute
 If you have any suggestions, ideas, and the like - let me know!
 
-##License
+## License
 GPL v2.0 or later.
+Copyright (C) 2016 Rich Tabor http://richtabor.com/

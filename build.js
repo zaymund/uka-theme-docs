@@ -5,15 +5,15 @@ var inline = require('inline-source'),
     build = 'build/index.html';
 
 inline(src, {
-    compress: true,
-    attribute: false,
-    svgAsImage: true,
-    rootpath: path.dirname(src),
-    ignore: ['script']
+  compress: true,
+  attribute: false,
+  svgAsImage: true,
+  rootpath: path.dirname(src),
+  ignore: ['script']
 }, function (err, html) {
-    if (!err) {
-        fs.writeFileSync(build, html);
-    } else {
-        throw err;
-    }
+  if (!err) {
+    fs.writeFileSync(build, html);
+  } else {
+    throw err;
+  }
 });
