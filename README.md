@@ -3,9 +3,11 @@ Easily create beautiful, simple to use, and easily extendable documentation for 
 
 ## Build with NPM
 First of all install npm and run console in the project folder:
+
 <pre>npm install</pre>
 
 After that you will be able to build Theme Documentation:
+
 <pre>npm start</pre>
 
 Build will be added here: /build/index.html
@@ -13,12 +15,12 @@ Build will be added here: /build/index.html
 ## Variables
 Uka-theme-docs is straight HTML, but it utilizes a few "Find and Replace" variables so it's that much easier to plug in your relevant data. Simply conduct a search and replace the following:
 
-- [ ] `@@name` - York Pro
-- [ ] `@@slug` - york-pro
-- [ ] `@@purchaseUrl` - https://themebeans.com/checkout/
-- [ ] `@@demoUrl` - http://themebeans.com/york-pro/
-- [ ] `@@supportUrl` - https://themebeans.com/support/
-- [ ] `@@changelogUrl` - http://demo.themebeans.com/wp-content/themes/york-pro/changelog.txt
+- [ ] `@@name` - theme name,
+- [ ] `@@slug` - theme slug,
+- [ ] `@@purchaseUrl` - purchase url,
+- [ ] `@@demoUrl` - demo url,
+- [ ] `@@supportUrl` - support url,
+- [ ] `@@changelogUrl` - changelog url.
 
 ## Sections
 You'll need to add or remove your own sections, but that's easy to do as well - with minimal code.
