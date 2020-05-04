@@ -1,19 +1,27 @@
 {
-  "name": "docs",
-  "private": true,
-  "version": "1.0.0",
-  "engines": {
-    "node": ">=6.5",
-    "npm": ">=3.10"
-  },
-  "devDependencies": {
-    "inline-source": "^5.2.0",
+	"name": "uka-theme-docs",
+	"version": "1.0.0",
+	"description": "WordPress Theme Documentation",
+	"main": "gulpfile.js",
+	"scripts": {
+		"build": "node gulpfile.js/tasks/build.js"
+	},
+	"author": "ukathemes",
+	"license": "ISC",
+	"devDependencies": {
+		"beepbeep": "^1.3.0",
+		"browser-sync": "^2.26.7",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^6.1.0",
+		"gulp-imagemin": "^6.2.0",
+		"gulp-line-ending-corrector": "^1.0.3",
+		"gulp-notify": "^3.2.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-sass": "^4.0.2",
+		"require-dir": "^1.2.0",
+		"undertaker-forward-reference": "^1.0.2",
+		"gulp-newer": "^1.4.0",
+		"inline-source": "^5.2.0",
     "filendir": "^1.0.0"
-  },
-  "scripts": {
-    "start": "node build.js"
-  },
-  "dependencies": {
-    "npm": "^6.14.4"
-  }
+	}
 }

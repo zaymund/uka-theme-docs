@@ -1,0 +1,9 @@
+{
+	"baseDir" : "src",
+
+	"stylesSrc" : "./src/sass",
+	"stylesDest" : "./src/css",
+
+	"imagesSrc" : "./src/images/src",
+	"imagesDest" : "./src/images"
+}
