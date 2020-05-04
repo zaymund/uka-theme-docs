@@ -4,7 +4,7 @@
 	"description": "WordPress Theme Documentation",
 	"main": "gulpfile.js",
 	"scripts": {
-		"build": "node gulpfile.js/tasks/build.js"
+		"start": "node build.js"
 	},
 	"author": "ukathemes",
 	"license": "ISC",
@@ -22,6 +22,6 @@
 		"undertaker-forward-reference": "^1.0.2",
 		"gulp-newer": "^1.4.0",
 		"inline-source": "^5.2.0",
-    "filendir": "^1.0.0"
+		"filendir": "^1.0.0"
 	}
 }

@@ -1,0 +1,23 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  background-color: $body__BackgroundColor;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
