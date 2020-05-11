@@ -1,0 +1,70 @@
+section {
+  background: $body__BackgroundColor;
+  margin-bottom: $spacer--gorizontal;
+  position: relative;
+  padding: 10% 8%;
+  //min-height: 100vmin;
+
+  @include mq("tablet") {
+    padding: 6% 8%;
+  }
+
+  header {
+    margin-bottom: $spacer--gorizontal * 2;
+
+    p {
+      font-size: $font-size--md;
+    }
+  }
+
+  h1, h2 {
+    padding-bottom: $spacer--gorizontal / 4;
+    border-bottom: 1px solid $border__Color;
+  }
+
+  h1 {
+    a {
+      color: $text--primary__Color;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $text--primary__Color;
+      }
+    }
+
+    small {
+      position: absolute;
+      top: $spacer--gorizontal;
+      right: $spacer--gorizontal;
+
+      font-size: 13px;
+      font-weight: normal;
+
+      @include mq("tablet", max) {
+        display: none;
+      }
+
+      a {
+        color: $text--secondary__Color;
+
+        &:hover,
+        &:focus {
+          color: $accent--hover__Color;
+        }
+      }
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  &#Credits {
+    min-height: 0;
+  }
+}

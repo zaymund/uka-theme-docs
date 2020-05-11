@@ -1,13 +1,11 @@
 .container {
 	position: relative;
   width: 100%;
-	max-width: calc(800px + #{$spacer * 2});
+	max-width: calc(960px + #{$spacer * 2});
 	margin: 0 auto;
-	padding: 0 $spacer;
 
 	@include mq("tablet") {
-		padding-top: 5%;
-		padding-bottom: 5%;
+		padding: 5% $spacer;
 	}
 
 	> :last-child {

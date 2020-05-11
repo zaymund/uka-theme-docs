@@ -9,19 +9,19 @@ $brown:     #afa186;
 $white:     #ffffff;
 $black:     #232325;
 
-$gray--100: lighten( $black, 83% );
-$gray--200: lighten( $black, 80% );
+$gray--100: lighten( $black, 81% );
+$gray--200: lighten( $black, 77% );
 $gray--300: lighten( $black, 68% );
 $gray--400: lighten( $black, 53% );
-$gray--500: lighten( $black, 42% );
+$gray--500: lighten( $black, 45% );
 $gray--600: lighten( $black, 31.5% );
 $gray--700: lighten( $black, 23% );
 $gray--800: lighten( $black, 10% );
 $gray--900: lighten( $black, 3% );
 
 // Main colors
-$body__BackgroundColor:         $gray--100;
-$secondary__BackgroundColor:    $white;
+$body__BackgroundColor:         $white;
+$secondary__BackgroundColor:    $gray--100;
 $text--primary__Color:          $black;
 $text--secondary__Color:        $gray--500;
 $accent__Color:                 $blue;
@@ -66,4 +66,4 @@ $spacer--gorizontal: 1.75rem;
 
 // Other
 $transition--base:    all .25s ease-in-out;
-$border-radius--base: .375rem;
+$border-radius--base: .25rem;

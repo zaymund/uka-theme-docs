@@ -199,7 +199,7 @@ html {
 
 body {
   position: relative;
-  background-color: #f7f7f8;
+  background-color: #f2f2f3;
 }
 
 img,
@@ -256,50 +256,20 @@ h2 {
   font-size: 1.875em;
 }
 
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 2.25em;
-  }
-}
-
 h3 {
   font-size: 1.5em;
-}
-
-@media only screen and (min-width: 768px) {
-  h3 {
-    font-size: 1.875em;
-  }
 }
 
 h4 {
   font-size: 1.3125em;
 }
 
-@media only screen and (min-width: 768px) {
-  h4 {
-    font-size: 1.5em;
-  }
-}
-
 h5 {
   font-size: 1.125em;
 }
 
-@media only screen and (min-width: 768px) {
-  h5 {
-    font-size: 1.3125em;
-  }
-}
-
 h6 {
   font-size: 1em;
-}
-
-@media only screen and (min-width: 768px) {
-  h6 {
-    font-size: 1.125em;
-  }
 }
 
 p {
@@ -336,13 +306,14 @@ a:hover, a:active {
 blockquote {
   position: relative;
   margin: 0 0 1.75rem;
-  padding-left: 1.5rem;
-  color: #cb2431;
+  padding: 0.875rem 1.5rem;
+  color: #232325;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   font-size: 1em;
   font-weight: 400;
   font-style: normal;
   line-height: 1.75;
+  background-color: #f2f2f3;
   border-left: 0.25rem solid #cb2431;
 }
 
@@ -376,10 +347,11 @@ pre {
   margin-top: 0;
   color: #232325;
   font-family: Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: .9375em;
-  line-height: 1.86667;
+  font-size: 1em;
+  line-height: 1.75;
   white-space: pre-wrap;
-  background-color: #ffffff;
+  background-color: #f2f2f3;
+  border-radius: 0.25rem;
 }
 
 pre code, pre kbd, pre tt, pre var {
@@ -392,10 +364,11 @@ code, kbd, tt, var {
   padding: 0 .25em;
   color: #232325;
   font-family: Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: .9375em;
-  line-height: 1.86667;
+  font-size: 1em;
+  line-height: 1.75;
   word-wrap: break-word;
-  background-color: #ffffff;
+  background-color: #e8e8e9;
+  border-radius: 0.25rem;
 }
 
 ul,
@@ -418,7 +391,7 @@ ol {
 
 li {
   line-height: inherit;
-  margin-bottom: .25em;
+  margin-bottom: 0.4375rem;
 }
 
 li:last-child {
@@ -438,15 +411,13 @@ li > ol {
 .container {
   position: relative;
   width: 100%;
-  max-width: calc(800px + 2rem);
+  max-width: calc(960px + 2rem);
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 5% 1rem;
   }
 }
 
@@ -454,109 +425,123 @@ li > ol {
   margin-bottom: 0;
 }
 
-header {
-  margin-bottom: 8%;
-}
-
-footer {
-  text-align: center;
-}
-
-h1, h2 {
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-h1 small {
-  position: absolute;
-  top: 1.75rem;
-  right: 1.75rem;
-  font-size: 15px;
-  font-weight: normal;
-}
-
-@media only screen and (max-width: 767px) {
-  h1 small {
-    display: none;
-  }
-}
-
-h1 small a {
-  color: #8c8c92;
-}
-
+/* Section */
 section {
-  background: #fff;
-  margin-bottom: 2%;
+  background: #ffffff;
+  margin-bottom: 1.75rem;
   position: relative;
   padding: 10% 8%;
 }
 
-@media screen and (min-width: 500px) {
+@media only screen and (min-width: 768px) {
   section {
     padding: 6% 8%;
   }
 }
 
+section header {
+  margin-bottom: 3.5rem;
+}
+
+section header p {
+  font-size: 1.125em;
+}
+
+section h1, section h2 {
+  padding-bottom: 0.4375rem;
+  border-bottom: 1px solid #e8e8e9;
+}
+
+section h1 a {
+  color: #232325;
+  text-decoration: none;
+}
+
+section h1 a:hover, section h1 a:focus {
+  color: #232325;
+}
+
+section h1 small {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.75rem;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 767px) {
+  section h1 small {
+    display: none;
+  }
+}
+
+section h1 small a {
+  color: #94949a;
+}
+
+section h1 small a:hover, section h1 small a:focus {
+  color: #0355b3;
+}
+
+section > :last-child {
+  margin-bottom: 0;
+}
+
+section footer {
+  text-align: center;
+}
+
+section#Credits {
+  min-height: 0;
+}
+
+/* Navigation */
 nav {
-  background: #F0F1F3;
-  min-width: 215px;
-  margin-bottom: 5px;
-  margin-top: 15px;
+  background: #f2f2f3;
+  margin-bottom: 1.75rem;
 }
 
 nav:first-of-type a {
-  color: #d54e21;
+  color: #cb2431;
   border-radius: 0;
 }
 
-nav:first-of-type a:hover {
-  color: #d54e21;
+nav:first-of-type a:hover, nav:first-of-type a:focus {
+  color: #cb2431;
 }
 
 nav:first-of-type a:before {
-  background-color: #d54e21;
-}
-
-nav.affix {
-  position: fixed;
-  top: 20px;
-}
-
-nav.affix-bottom {
-  position: absolute;
+  background-color: #cb2431;
 }
 
 nav a {
-  border-radius: 3px;
-  font-size: 15px;
-  display: block;
-  cursor: pointer;
-  font-weight: 500;
-  position: relative;
-  text-decoration: none;
-  padding: 10px 12px;
   width: 100%;
-  padding-right: 3px;
-  border-bottom: 2px solid #fff;
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.875rem;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 0.25rem;
 }
 
 nav a:before {
-  content: '';
-  width: 4px;
+  content: "";
+  width: .25rem;
   display: block;
   left: 0;
   position: absolute;
   height: 100%;
   display: none;
-  background: #1e8cbe;
+  background: #0366d6;
   top: 0;
 }
 
 nav a:hover {
-  background-color: #E6E8EA;
-  color: #1e8cbe;
-  text-decoration: underline;
+  background-color: #e8e8e9;
+  color: #0355b3;
 }
 
 nav a:hover:before {
