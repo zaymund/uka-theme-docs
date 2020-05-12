@@ -12,7 +12,7 @@ After that you will be able to build Theme Documentation:
 
 Build will be added here: /build/index.html
 
-If you need to change Theme Documentation styles:
+If you need to change Theme Documentation styles run:
 
 <pre>gulp watch</pre>
 
