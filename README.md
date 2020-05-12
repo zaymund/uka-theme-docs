@@ -12,15 +12,24 @@ After that you will be able to build Theme Documentation:
 
 Build will be added here: /build/index.html
 
+If you need to change Theme Documentation styles:
+
+<pre>gulp watch</pre>
+
+Scss files are located here: /src/sass/
+
 ## Variables
 Uka-theme-docs is straight HTML, but it utilizes a few "Find and Replace" variables so it's that much easier to plug in your relevant data. Simply conduct a search and replace the following:
 
 - [ ] `@@name` - theme name,
 - [ ] `@@slug` - theme slug,
-- [ ] `@@purchaseUrl` - purchase url,
 - [ ] `@@demoUrl` - demo url,
+- [ ] `@@purchaseUrl` - purchase url,
 - [ ] `@@supportUrl` - support url,
-- [ ] `@@changelogUrl` - changelog url.
+- [ ] `@@changelogUrl` - changelog url,
+- [ ] `@@author` - author name,
+- [ ] `@@authorUrl` - author url,
+- [ ] `@@authorContactUrl` - author contact url.
 
 ## Sections
 You'll need to add or remove your own sections, but that's easy to do as well - with minimal code.

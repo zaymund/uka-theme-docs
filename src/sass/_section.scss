@@ -3,7 +3,6 @@ section {
   margin-bottom: $spacer--gorizontal;
   position: relative;
   padding: 10% 8%;
-  //min-height: 100vmin;
 
   @include mq("tablet") {
     padding: 6% 8%;
@@ -62,9 +61,5 @@ section {
 
   footer {
     text-align: center;
-  }
-
-  &#Credits {
-    min-height: 0;
   }
 }
