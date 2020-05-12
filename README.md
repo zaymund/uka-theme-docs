@@ -34,4 +34,4 @@ Uka-theme-docs is straight HTML, but it utilizes a few "Find and Replace" variab
 ## Sections
 You'll need to add or remove your own sections, but that's easy to do as well - with minimal code.
 
-Add a link in the `header nav` element, like this: `[<a href="#Developers">Developers</a>]` and then add a `section` below with the same ID, like this: `[<section id="Developers">]`. Then just add your content!
+Add a link in the `header nav` element, like this: `<a href="#Developers">Developers</a>` and then add a `section` below with the same ID, like this: `<section id="Developers">`. Then just add your content!
