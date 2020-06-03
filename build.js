@@ -7,22 +7,22 @@
  *
  * @command npm build
  */
-const { inlineSource } = require('inline-source');
-const fs = require('fs');
-const path = require('path');
-const src = path.resolve('src/index.html');
-const build = path.resolve('build/index.html');
+var inline = require('inline-source'),
+    fs = require('filendir'),
+    path = require('path') ,
+    src = 'src/index.html',
+    build = 'build/index.html';
 
-inlineSource(src, {
-  compress: true,
-  attribute: false,
-  svgAsImage: true,
-  rootpath: path.resolve('www'),
-  ignore: ['script']
-})
-  .then((html) => {
-    fs.writeFileSync(build, html);
-  })
-  .catch((err) => {
-    throw err;
-  });
+inline(src, {
+    compress: true,
+    attribute: false,
+    svgAsImage: true,
+    rootpath: path.dirname(src),
+    ignore: ['script']
+}, function (err, html) {
+    if (!err) {
+        fs.writeFileSync(build, html);
+    } else {
+        throw err;
+    }
+});
