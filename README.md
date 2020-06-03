@@ -1,1 +1,2 @@
-# Falkorn WordPress Theme Documentation
+# Falkorn Theme Documentation
+Documentation for our Falkorn WordPress Theme.
