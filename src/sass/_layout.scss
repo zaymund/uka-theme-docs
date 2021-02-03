@@ -1,7 +1,7 @@
 .container {
 	position: relative;
   width: 100%;
-	max-width: calc(960px + #{$spacer * 2});
+	max-width: calc(797px + #{$spacer * 2});
 	margin: 0 auto;
 
 	@include mq("tablet") {

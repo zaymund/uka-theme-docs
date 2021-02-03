@@ -3,20 +3,21 @@ section {
   margin-bottom: $spacer--gorizontal;
   position: relative;
   padding: 10% 8%;
+  min-height: 1127px;
 
   @include mq("tablet") {
-    padding: 6% 8%;
+    padding: 8%;
   }
 
   header {
-    margin-bottom: $spacer--gorizontal * 2;
+    margin-bottom: $spacer--gorizontal;
 
     p {
       font-size: $font-size--md;
     }
   }
 
-  h1, h2 {
+  h1 {
     padding-bottom: $spacer--gorizontal / 4;
     border-bottom: 1px solid $border__Color;
   }
@@ -61,5 +62,9 @@ section {
 
   footer {
     text-align: center;
+  }
+
+  &#Credits {
+    min-height: inherit;
   }
 }

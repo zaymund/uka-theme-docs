@@ -36,6 +36,7 @@
         <a href="#Footer">Footer Set Up</a>
         <a href="#Portfolio">Portfolio Set Up</a>
         <a href="#ColorSettings">Color settings</a>
+        <a href="#TypographySettings">Typography settings</a>
         <a href="#Updates">How To Update Theme</a>
         <a href="#ChildTheme">Child Theme</a>
         <a href="#Translation">Translation Theme</a>
@@ -67,7 +68,7 @@
       <header><h1><a href="#ThemeInstallation">Theme Installation</a><small><a href="#html">Back to Top</a></small></h1></header>
       <p>Once you've downloaded the installation file on ThemeForest, extract it and locate a file called <code>@@slug.zip</code>. You can install the theme by using one of two installation methods:</p>
 
-      <h3>WordPress upload</h3>
+      <h5>1. WordPress upload:</h5>
       <ol>
         <li>Login to WordPress Admin and browse to "Appearance > Themes".</li>
         <li>Click on the "Add New" button and click "Upload Theme".</li>
@@ -76,7 +77,7 @@
         <li>When your theme is successfully installed, click "Activate" to activate the newly installed theme.</li>
       </ol>
 
-      <h3>FTP upload</h3>
+      <h5>2. FTP upload:</h5>
       <ol>
         <li>Using FTP client, login to the server where your WordPress website is hosted.</li>
         <li>Using FTP client, navigate to the <code>/wp-content/themes/</code> directory under your WordPress website's root directory.</li>
@@ -86,12 +87,12 @@
 
       <blockquote>When you use first or second method, please make sure that you're uploading the <strong>@@slug.zip</strong> file (for first method) or <strong>@@slug folder</strong> (for second method), not entire package you downloaded. If you upload the wrong file you will get an error stating <strong>“Error: missing style.css stylesheet.”</strong></blockquote>
       <p>Once installation is complete, your @@name theme will be ready to use. You should now see @@name theme as active.</p>
-      <p><strong>Note:</strong> If you have existing content and featured images, you will have to install <a target="_blank" href="http://wordpress.org/plugins/regenerate-thumbnails/">Regenerate Thumbnails</a> plugin and run it from "Tools > Regenerate Thumbnails".</p>
+      <p><strong>Note:</strong> If you have existing content and featured images, you will have to install "<a target="_blank" href="http://wordpress.org/plugins/regenerate-thumbnails/">Regenerate Thumbnails</a>" plugin and run it from "Tools > Regenerate Thumbnails".</p>
 
-      <h2>Regenerate Thumbnails</h2>
+      <h3>Regenerate Thumbnails</h3>
       <p>If you already had images in your Media Library when you installed @@name, you will have to resize your image thumbnails. Follow these instructions:</p>
       <ol>
-        <li>Go to "Appearance > Install Plugins" and install Regenerate Thumbnails plugin.</li>
+        <li>Go to "Appearance > Install Plugins" and install "Regenerate Thumbnails" plugin.</li>
         <li>Next, go to "Tools > Regenerate Thumbnails".</li>
         <li>Click the "Regenerate All Thumbnails" button. It will take some time depending on the number of images you have. <strong>Do not</strong> close your browser.</li>
       </ol>
@@ -106,6 +107,8 @@
     <section id="ImportDemoData">
       <header><h1><a href="#ImportDemoData">Import Demo Data</a><small><a href="#html">Back to Top</a></small></h1></header>
       <p>If it's a fresh site (or a test site) with no content, it's a good idea to import demo content to get you started. You don't need to do it on a live production site as it will import several posts, pages, and images.</p>
+      <p>Demo content can be installed in two ways:</p>
+      <h5>1. Manual Demo Import</h5>
       <p>We have created a folder labeled <strong>Demo_Content</strong> which contains an export for the Live Preview.</p>
       <ol>
         <li>Log-in to your WordPress backend and open your WordPress importer "Tool > Import > WordPress".</li>
@@ -114,21 +117,37 @@
         <li>Click "Upload file and import".</li>
       </ol>
       <p>You now just need to wait for the importer to finish. This might take a few minutes depending on your hosting server speed.</p>
+      <h5>2. One Click Demo Import</h5>
+      <blockquote>Before you begin, make sure "<a target="_blank" href="https://wordpress.org/plugins/one-click-demo-import/">One Click Demo Import</a>" plugin is activated.</blockquote>
+      <p>If you want to install demo content automatically with "One Click Demo Import" plugin, please follow these steps below:</p>
+      <ol>
+        <li>Go to "Appearance > One Click Demo Import".</li>
+        <li>Select which demo you want to install and click "Import" button below it.</li>
+        <li>Just wait a couple of minutes and everything will be done.</li>
+      </ol>
+      <p>After the installation is done all pages, portfolio items and posts will be imported correctly, menus and pages will be setted.</p>
+      <blockquote><strong>Important notice:</strong> The images on the demo site are not included in your purchase from ThemeForest, there are only for the demo site. Therefore, after installing the demo content, the images will not be there.</blockquote>
     </section>
 
     <section id="Customizing">
-      <header><h1><a href="#Customizing">Theme Customizing</a><small><a href="#html">Back to Top</a></small></h1><header>
+      <header><h1><a href="#Customizing">Theme Customizing</a><small><a href="#html">Back to Top</a></small></h1></header>
       <p>Customize area is one of the main feature in our theme. They give you abilities to made a changes to your site without touching a single line of code.</p>
-      <p>"Customize" give you an ability to live preview changes on the site. In this field you can change a theme's custom featured content, layout, customize menus and widgets and other. You can go to theme customize at "Appearance > Customize" section from WordPress admin area.</p>
+      <p>"Customize" give you an ability to live preview changes on the site. In this field you can change a theme's layout, customize menus and widgets and other. You can go to theme customize at "Appearance > Customize" section from WordPress admin area.</p>
     </section>
 
     <section id="Header">
-      <header><h1><a href="#Header">Header</a><small><a href="#html">Back to Top</a></small></h1><header>
-      <p>To set up site logo:</p>
+      <header><h1><a href="#Header">Header</a><small><a href="#html">Back to Top</a></small></h1></header>
+      <h6>To set up site logo:</h6>
       <ol>
         <li>Go to "Appearance > Customize > Site Identity > Logo".</li>
         <li>Under Logo Image, click "Select Image" button.</li>
         <li>Select logo from your Media Library or upload new image.</li>
+        <li>Click "Publish" button.</li>
+      </ol>
+      <h6>To set up primary menu view:</h6>
+      <ol>
+        <li>Go to "Appearance > Customize > Header Settings ".</li>
+        <li>In "Primary Menu View" select "Classic Menu" or "Overlay Menu".</li>
         <li>Click "Publish" button.</li>
       </ol>
     </section>
@@ -149,8 +168,8 @@
         <li>Save changes.</li>
       </ol>
 
-      <h2>Social Menu</h2>
-      <p>To enable social menu in the Footer and Main Navigation Overlay you need to set up your Social Links Menu:</p>
+      <h3>Social Menu</h3>
+      <p>To enable social menu in the Footer you need to set up your Social Links Menu:</p>
       <ol>
         <li>Go to "Appearance > Customize > Menus".</li>
         <li>Click "Create New Menu" button.</li>
@@ -167,10 +186,11 @@
       <header><h1><a href="#Homepage">Set Up Your Homepage</a><small><a href="#html">Back to Top</a></small></h1></header>
       <p>To set up a simle blog page:</p>
       <ol>
-        <li>Go to "Appearance > Customize > Content Area Settings".</li>
-        <li>Select one of content layouts to display.</li>
+        <li>Go to "Appearance > Customize > Blog Settings ".</li>
+        <li>Select one of posts list layouts to display.</li>
         <li>Click "Publish" button.</li>
       </ol>
+      <p>To learn how to install the portfolio showcase page on the home page, see the section "Portfolio Set Up".</p>
     </section>
 
     <section id="Sidebars">
@@ -182,13 +202,12 @@
         <li>Go to "Appearance > Widgets".</li>
         <li>Expand the box, where you would like to place your widget, by clicking on the arrow icon next to it.</li>
         <li>Drag & drop the widget you wish to use, in the expanded area below the box.</li>
-        <li>Fill in the information necessary and click Save.</li>
+        <li>Fill in the information necessary and click "Save".</li>
       </ol>
 
-      <h3>The sidebar locations in the theme are referenced below</h3>
+      <h4>The sidebar locations in the theme are referenced below</h4>
       <ol>
         <li>Sidebar: Appears to the right of the main content.</li>
-        <li>Main Navigation: Appear in your main navigation overlay.</li>
       </ol>
     </section>
 
@@ -208,7 +227,7 @@
       <p>After activating the plugin in the admin panel of your site will be a section "Portfolio", where you can add your projects and set up categories with tags for them.</p>
       <p>A list of your projects will be available at: <strong>yoursite.com/portfolio</strong>.</p>
 
-      <p>To set your portfolio as your home page:</p>
+      <h5>To set your portfolio as your home page:</h5>
       <ol>
         <li>Add a new page to your site and name it "Showcase".</li>
         <li>Go to "Dashboard > Appearance > Customize > Homepage Settings" and select "A static page" for "Your homepage displays".</li>
@@ -217,7 +236,7 @@
         <li>That's all. Now the main page of your website will display selected projects from your portfolio.</li>
       </ol>
 
-      <p>In addition, the plugin "Uka Portfolio" has several settings:</p>
+      <h5>In addition, the plugin "Uka Portfolio" has several settings:</h5>
       <ul>
         <li>You can select the layouts for your portfolio and showcase pages.</li>
         <li>You can select the number of items on the portfolio and showcase page.</li>
@@ -238,11 +257,42 @@
       </ol>
     </section>
 
+    <section id="TypographySettings">
+      <header><h1><a href="#TypographySettings">Typography Settings</a><small><a href="#html">Back to Top</a></small></h1></header>
+      <p>@@name comes with several fonts that can be set upped for the main elements of the site.</p>
+      <p>You can set the main font for the site, fonts for titles and main content (text of posts, comments, etc.).</p>
+      <h5>To set up fonts:</h5>
+      <ol>
+        <li>Go to "Appearance > Customize > Typography".</li>
+        <li>Select fonts and click "Publish" button.</li>
+      </ol>
+      <p>Each settings field has its own predefined set of fonts that are best suited for the selected area in the context of this theme. For these fonts, the appropriate styles are set in order to make them look the best in the theme.</p>
+      <p>But you can install other fonts as well.</p>
+      <h5>How to set up custom fonts</h5>
+      <p>In the theme style file, there are three css variables that are responsible for fonts:</p>
+      <ul>
+        <li><code>--font-family--base</code> - for the main font for the site;</li>
+        <li><code>--font-family--headings</code> - for the titles font;</li>
+        <li><code>--font-family--content</code> - for the main content font.</li>
+      </ul>
+      <p>Thanks to this, you can simply upload the files of the selected fonts to the theme, connect them in the style file, and set them for the specified variables.</p>
+      <p>Below is an example of adding a "Open Sans" font for headings:</p>
+      <ol>
+        <li>Go to "Appearance > Customize > Typography".</li>
+        <li>Select "Custom" font in the "Headings Font Family" field and click "Publish" button.</li>
+        <li>Go to "Google Fonts" site and download it.</li>
+        <li>Upload the required font styles (OpenSans-ExtraBold.ttf for example) to the folder <strong>neiman-child/assets/fonts</strong> (For any changes to the theme, use the child theme.)</li>
+        <li>Add the following styles to the child theme's style file.</li>
+      </ol>
+      <script src="https://gist.github.com/ukathemes/7f0e62766bd5913ef1903f51d3ef7233.js"></script>
+      <p>If you find a font that you think will look great in the theme, write to us and maybe we will add it to the theme in the next update.</p>
+    </section>
+
     <section id="Updates">
       <header><h1><a href="#Updates">How To Update Theme</a><small><a href="#html">Back to Top</a></small></h1></header>
       <p>If you are in need of the update, download the current build from ThemeForest to install the updated theme.</p>
 
-      <h2>FTP Updating</h2>
+      <h3>FTP Updating</h3>
       <p>If you have not customized the original theme files then you may simply drop the updated theme folder contents into the theme folder on your server – which is located in <code>wp-content/themes/@@slug</code>.</p>
       <p>If you wish to upload the entire updated theme as a separate theme, ensure you:</p>
       <ul>
@@ -252,11 +302,11 @@
       </ul>
       <p>If you choose to upload the whole theme and switch to it, you may lose your Theme Customizer data and will have to add those back in.</p>
 
-      <h2>FTP Selective Updating</h2>
+      <h3>FTP Selective Updating</h3>
       <p>On the other hand, if you have customized some files in the core theme contents, you should consider selective updating, which simply means updating only the files that are pointed out in the theme’s changelog.</p>
       <p>There are a couple programs out there that will allow you to compare versions of files, in order to catch customizations you may not remember. Some recommended programs are <a href="http://winmerge.org/" target="_blank">WinMerge</a> (Windows), <a href="http://www.kaleidoscopeapp.com/" target="_blank">Kaleidoscope</a> (OSX), and handy GitHub <a href="http://mac.github.com/" target="_blank">(OSX)</a> & <a href="http://windows.github.com/" target="_blank">(Windows)</a>.</p>
 
-      <h2>Recommended</h2>
+      <h3>Recommended</h3>
       <p>Overall, the safest and cleanest way to update your theme is to leave your currently modified theme on your server/site as is, rename the folder of the newly updated theme, upload the new theme, and modify that to match your original custom work. In this way, if something has gone wrong with the new version, you’re just a few clicks away from getting things back to how they originally were.</p>
       <blockquote>Also you can use for update <a href="https://envato.com/market-plugin/" target="_blank">Envato Market plugin</a>.</blockquote>
       <blockquote>Please note that @@author is not responsible for content loss, database errors and such, which may happen to your WordPress install upon an incorrectly applied theme update.</blockquote>
@@ -266,26 +316,26 @@
       <header><h1><a href="#ChildTheme">Child Theme</a><small><a href="#html">Back to Top</a></small></h1></header>
       <p>A child theme is a theme that inherits the functionality and styling of another theme, called the parent theme. Child themes are <b>the recommended way of modifying an existing theme</b>.</p>
 
-      <h2>Why use a Child Theme?</h2>
+      <h3>Why use a Child Theme?</h3>
       <p>There are one main reason why you would want to use a child theme: <b>If you modify a theme directly and it is updated, then your modifications <u>WILL</u> be lost.</b> By using a child theme you will ensure that your modifications are preserved.</p>
 
-      <h2>Installing the Child theme</h2>
+      <h3>Installing the Child theme</h3>
       <p>Log in to your site's administration panel, and go to "Administration Panels > Appearance > Themes". Click "Add New" and follow the directions to upload the <cite>@@slug-child.zip</cite> file, located in the <cite>@@slug_theme</cite> folder.</p><p>Next simply click "Activate" and both the @@name theme and @@name child theme will be active on your WordPress site. Now you're ready to customize away.</p>
 
-      <h2>Customizing Template Files</h2>
+      <h3>Customizing Template Files</h3>
       <p>If you want to change more than just the stylesheet, your child theme can override any file in the parent theme: simply include a file of the same name in the child theme directory, and <u>it will override the equivalent file</u> in the parent theme directory when your site loads.</p>
       <p>For instance, if you want to change the PHP code for the site header, you can include a <code>header.php</code> in your child theme's directory, and that file will be used instead of the parent theme's <code>header.php</code>.</p>
 
-      <h2>Child Theme Functions.php</h2>
+      <h3>Child Theme Functions.php</h3>
       <p>Unlike <code>style.css</code>, the <code>functions.php</code> file of a child theme does not override its counterpart from the parent. Instead, it is loaded in addition to the parent’s <code>functions.php</code>. (Specifically, it is loaded right before the parent’s file.)</p>
       <p>In that way, the <code>functions.php</code> of a child theme provides a smart, trouble-free method of modifying the functionality of a parent theme.</p>
 
-      <h2>Adding PHP Functions</h2>
+      <h3>Adding PHP Functions</h3>
       <p>Say that you want to add a PHP function to your theme. The fastest way would be to open the <code>@@slug/functions.php</code> file and put the function there... <b>But that’s not smart:</b> The next time @@name is updated, your function will disappear (as the entire contents of the @@slug folder are replaced upon an update).</p>
       <p>However, there is an alternative way which is the smart way: you can create a child theme, add a <code>functions.php</code> file in it, and add your function to that file. The function will do the exact same job from there too, with the advantage that it will not be affected by future updates of the parent theme.</p>
       <blockquote><b>Do not</b> copy the full content of functions.php of the parent theme into functions.php in the child theme. It's not a good practice by any means.</blockquote>
 
-      <h2>Modifiying PHP Functions</h2>
+      <h3>Modifiying PHP Functions</h3>
       <p>You can use this same exact methodology to modify functions that are within the parent theme's files. Let's take a quick look at an example.</p>
       <p>Below is an example of a typical function within most of our WordPress themes - a template tag that displays the entry date.</p>
       <script src="https://gist.github.com/ukathemes/442fb190115b86a87dfe6ef08182aeb3.js"></script>

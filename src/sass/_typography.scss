@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 
   color: $text--primary__Color;
 	font-family: $font-family--headings;
-	font-weight: $font-weight--bold;
+	font-weight: $font-weight--semi-bold;
 	line-height: $line-height--headings;
 	font-feature-settings: "lnum";
 	font-variant-numeric: lining-nums;
@@ -31,10 +31,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: $font-size--xxxl;
-
-	@include mq("tablet") {
-		font-size: $font-size--xxxxl;
-	}
 }
 
 h2 {
